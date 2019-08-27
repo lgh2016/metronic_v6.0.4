@@ -1,0 +1,98 @@
+//
+// Error 3
+//
+
+
+
+
+// Custom pages SASS files are compiled per demo as 
+// each demo has own config settings that may override the global theme config
+// and pages may slighty different on demos
+
+
+// Global theme config(sass/theme/core/config.scss)
+@import "../../config";
+
+// Demo config(e.g: sass/theme/demos/demo1/config.scss) that overrides global theme config. 
+// Do not change this path, build tool automatically finds current demo's config file.    
+@import "config.scss";
+
+.kt-error-v3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;             
+
+    .kt-error_container {
+        .kt-error_number {
+            > h1 {                
+                font-size: 15.7rem;
+                margin-left: 7.85rem;
+                margin-top: 11.4rem;               
+                font-weight: 500;                 
+                -webkit-text-stroke-width: 0.35rem;
+                -moz-text-stroke-width: 0.35rem;
+                text-stroke-width: 0.35rem; 
+
+                color:#A3DCF0; 
+                -webkit-text-stroke-color: white;
+                -moz-text-stroke-color: white;
+                text-stroke-color: white;                 
+
+                @include kt-hack-ie {
+                    color: white;
+                } 
+            }
+        }
+
+        .kt-error_title {
+            margin-left: 7.85rem;
+            font-size: 2.5rem;      
+            font-weight: 700;      
+            color: kt-base-color(label, 4);
+        }
+
+        .kt-error_subtitle {
+            margin-left: 7.85rem;
+            margin-top: 3.57rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: kt-base-color(label, 3);
+        }
+
+        .kt-error_description {
+            margin-left: 7.85rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: kt-base-color(label, 2);
+        }
+    } 
+}    
+
+@include kt-mobile() {
+    .kt-error-v3 {
+        .kt-error_container {
+            .kt-error_number {
+                > h1 {                        
+                    font-size: 8rem;
+                    margin-left: 4rem;
+                    margin-top: 3.5rem;                                                 
+                }
+            }
+
+            .kt-error_title {
+                margin-left: 4rem;                    
+            }
+
+            .kt-error_subtitle {
+                margin-left: 4rem;
+                padding-right: 0.5rem;
+            }
+
+            .kt-error_description {
+                margin-left: 4rem;
+                padding-right: 0.5rem;
+            }
+        }
+    }    
+} 

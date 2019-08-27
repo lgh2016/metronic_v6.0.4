@@ -1,0 +1,47 @@
+//
+// Support Center/Faq 1
+//
+
+
+
+
+// Custom pages SASS files are compiled per demo as 
+// each demo has own config settings that may override the global theme config
+// and pages may slighty different on demos
+
+
+// Global theme config(sass/theme/core/config.scss)
+@import "../../config";
+
+// Demo config(e.g: sass/theme/demos/demo1/config.scss) that overrides global theme config. 
+// Do not change this path, build tool automatically finds current demo's config file.	
+@import "config.scss";
+
+// Base
+.kt-sc-faq {
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	.kt-sc__top{
+		display: flex;
+		padding: 6rem 0 10rem;
+		align-items: center;
+
+		.kt-sc__title {
+			margin-bottom: 0;
+			font-size: 1.85rem;
+			font-weight: 600;
+			color: kt-base-color(label, 4);
+		}
+
+		.kt-sc__nav{
+			margin: auto 0 auto auto;
+
+			.kt-link{
+				font-size: 1.3rem;
+				font-weight: 400;
+			}
+		}
+	}
+}

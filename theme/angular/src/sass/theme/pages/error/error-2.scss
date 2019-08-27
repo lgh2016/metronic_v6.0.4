@@ -1,0 +1,55 @@
+//
+// Error 2
+//
+
+
+
+
+// Custom pages SASS files are compiled per demo as 
+// each demo has own config settings that may override the global theme config
+// and pages may slighty different on demos
+
+
+// Global theme config(sass/theme/core/config.scss)
+@import "../../config";
+
+// Demo config(e.g: sass/theme/demos/demo1/config.scss) that overrides global theme config. 
+// Do not change this path, build tool automatically finds current demo's config file.    
+@import "config.scss";
+
+.kt-error-v2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+
+    .kt-error_container {
+        .kt-error_title2 {
+
+            > h1 {                
+                font-size: 6rem;
+                text-align: center;
+                margin-top: 45rem; 
+                font-weight: 500;                               
+            }
+        }
+
+        .kt-error_desc {
+            font-size: 2.5rem;
+            text-align: center; 
+            display: block;             
+            font-weight: 700;          
+        }
+    } 
+}
+
+@include kt-mobile() {
+    .kt-error-v2 {
+        .kt-error_container {
+            .kt-error_desc {
+                padding-left: 0.6rem;
+                padding-right: 0.6rem;
+            }
+        }
+    }    
+}          

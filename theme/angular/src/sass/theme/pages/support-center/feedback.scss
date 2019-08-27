@@ -1,0 +1,29 @@
+//
+// Support Center/Faq 3
+//
+
+
+
+
+// Custom pages SASS files are compiled per demo as 
+// each demo has own config settings that may override the global theme config
+// and pages may slighty different on demos
+
+
+// Global theme config(sass/theme/core/config.scss)
+@import "../../config";
+
+// Demo config(e.g: sass/theme/demos/demo1/config.scss) that overrides global theme config. 
+// Do not change this path, build tool automatically finds current demo's config file.	
+@import "config.scss";
+
+// Base
+.kt-sc-feedback {
+
+	.kt-sc__bg{
+
+		svg{
+			width: 650px;
+		}
+	}
+}
